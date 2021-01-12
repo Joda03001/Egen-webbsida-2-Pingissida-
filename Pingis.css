@@ -1,0 +1,85 @@
+/* En grid med Header, nav, main och footer som tar upp 1 fjärdedel vad */
+.container{
+	
+	display: grid; 
+		grid-template-columns: 1fr 1fr 1fr 1fr; 
+		grid-template-rows: auto; 
+		grid-template-areas: 
+	"header header header header" 
+	"nav nav nav nav" 
+	"main main main main" 
+	"footer footer footer footer ";
+	
+}
+	  
+	  header { 
+	  grid-area:header; 
+	  } 
+	  
+	  nav { 
+	  grid-area: nav;  
+	  } 
+	  
+	  main { 
+	  grid-area: main; 
+	  } 
+	  
+	  footer {
+		  grid-area:footer; 
+		  
+	  }
+	  
+	  /*En typselektor för alla h1 som gör att texten ligger i mitten */ 
+	  h1 {
+		  text-align:center; 
+		  
+	  }
+	  
+	  /*En typselektor som gör all text 20 pixlar stor */ 
+	  p{ 
+	  
+	  font-size: 20px;  
+	  } 
+	  
+	  /*en klassselektor som heter sidfot. Den gör att alla element med klassen sidfot får brun färg. */
+	  .sidfot { 
+	    color:Brown; 
+	  }
+	  
+	  
+	  /* En klassselektor som gör att hela sidans bakgrund är ljusblå */
+	body { background-color: LightBlue; } 
+	 
+	
+	li {font-size: 25px; }
+	
+	
+	.rubrik {
+		
+		font-size: 27px;
+	}
+	
+	
+	
+	
+	.mitten { 
+	text-align: center; 
+	font-size: 25px;
+	}
+	
+	/*En gruppselektor som gör att table, th, td och tr för samma egenskaper. Detta är för tabellen som gör att den får sträck. */
+	table,  th, td, tr{
+	border: 1px solid black;
+	font-size:25px; 
+	border-collapse: collapse;
+ 
+	
+
+	}  
+	
+	
+	
+	
+	
+
+	
